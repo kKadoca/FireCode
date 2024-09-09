@@ -1,95 +1,131 @@
 @charset "UTF-8";
 
 :root {
-    --main: Brain;
-    --subtitle: TylerDurden;
-    --name: Patrick;
-    --text: Cafe;
-    --textB: CafeBold;
-    --default: sans-serif;
+  --default: sans-serif;
 }
 
 @font-face {
-    /* Texto-Início e Botões*/
-    font-family: 'Brain';
-    src: url('../fonts/Brain.ttf') format('truetype');
-}
-
-@font-face {
-    /* Navigation e Subtítulos*/
-    font-family: 'TylerDurden';
-    src: url('../fonts/TylerDurden.ttf') format('truetype');
-}
-
-@font-face {
-    /* Nome-Início */
+    /* Principal / Marca */
     font-family: 'Patrick';
     src: url('../fonts/Patrick.ttf') format('truetype');
 }
 
 @font-face {
-    /* Corpo de texto*/
-    font-family: 'Cafe';
-    src: url('../fonts/LG\ Cafe.ttf') format('truetype');
+    /* Sub-titulos e Botoes */
+    font-family: 'Brain';
+    src: url('../fonts/Brain.ttf') format('truetype');
 }
 
 @font-face {
-    /* Corpo de texto*/
-    font-family: 'CafeBold';
-    src: url('../fonts/LG\ Cafe\ Bold.ttf') format('truetype');
+  /* Texto */
+  font-family: 'Candara';
+  src: url('../fonts/Candara.ttf') format('truetype');
 }
 
-
-/* geral */
-h2 {
-    font: bold 40px var(--subtitle), var(--default);
+@font-face {
+  /* Títulos e Destaque */
+  font-family: 'Candara_Bold';
+  src: url('../fonts/Candara_Bold.ttf') format('truetype');
 }
 
-header {
-    font: bold 20px var(--subtitle), var(--default);
+.title-font {
+  font-family: Candara_Bold, var(--default);
+  font-weight: bold;
+  font-size: 30px;
+
+  letter-spacing: 0.25em;
+
+  text-shadow: 0px 2px 4px #00000015;
 }
 
-footer {
-    font: normal 16px var(--subtitle), var(--default);
+.subtitle-font {
+  font-family: Brain, var(--default);
+  font-weight: normal;
+  font-size: 32px;
+
+  letter-spacing: 0.15em;
+  align-self: center;
+
+  border-bottom: 3px solid var(--color1);
+  text-shadow: 0px 2px 4px #00000025;
 }
 
-.botao {
-    font: normal 27px var(--main), var(--default);
+.cta-font {
+  font-family: Brain, var(--default);
+  font-weight: normal;
+  font-size: 22px;
+
+  letter-spacing: 0.15em;
+  
+  text-shadow: 0px 2px 4px #00000045;
 }
 
-.b2 {
-    font-size: 22px;
+.text-font {
+  font-family: Candara, var(--default);
+  font-weight: normal;
+  font-size: 22px;
+
+  letter-spacing: 0.10em;
+
+  text-shadow: 0px 2px 4px #00000015;
 }
 
-/* tela de inicio */
-.texto-inicio {
-    font: normal 30px var(--main), var(--default);
+.about {
+  letter-spacing: 0.30em !important;
 }
 
-.nome-inicio {
-    font: normal 160px var(--name), var(--default);
+.brand-font {
+  font-family: Patrick, var(--default);
+  font-weight: normal;
+  font-size: 36px;
+
+  color: var(--color1);
 }
 
-/* tela sobre mim */
-#aboutTextBox {
-    font: normal 20px var(--textB), var(--default);
+.header-footer-img {
+  filter: drop-shadow(0px 3px 6px #00000025);
 }
 
-/* tela de projetos */
-.card-project h3 {
-    font: normal 25px var(--main), var(--default);
+.fs-50 {
+  font-size: 50px !important;
 }
 
-.card-project p {
-    font: normal 15px var(--textB), var(--default);
+.header-footer-text {
+  color: var(--color2);
+  letter-spacing: 0.10em;
+  text-shadow: 0px 3px 6px #00000025;
 }
 
-/* tela de habilidades */
-.habilidade-descricao {
-    font: normal 20px var(--text), var(--default);
-    font-size: 18px;
+/*  CARDS STYLE  */
+.card-title {
+  font-family: Brain, var(--default);
+  font-weight: normal;
+  font-size: 24px;
+
+  text-align: center;
+  width: 180px;
+  letter-spacing: 0.10em;
+
+  text-shadow: 0px 2px 4px #00000025;
 }
 
-.subgrupo h3 {
-    font: normal 40px var(--textB), var(--default);
+.card-text {
+  font-family: Candara, var(--default);
+  font-weight: normal;
+  font-size: 18px;
+
+  letter-spacing: 0.05em;
+
+  text-shadow: 0px 2px 4px #00000025;
+}
+
+.card-button-text {
+  font-family: Candara_Bold, var(--default);
+  font-weight: bold;
+  font-size: 18px;
+
+  letter-spacing: 0.10em;
+
+  color: var(--color2);
+  text-shadow: 0px 2px 4px #00000035;
 }

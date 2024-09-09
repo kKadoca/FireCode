@@ -5,226 +5,210 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta name="author" content="Carlos Eduardo Terra">
-    <meta name="description" content="Portfolio de desenvolvedor front-end de Carlos Eduardo Terra">
-    <meta name="keywords" content="portfolio, front-end, html, css, javascript, web, desenvolvedor">
-    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
-    <title> Portfolio | Kadu Terra </title>
+    <meta name="description" content="Landing Page de apresentação da marca e empresa FireCode">
+    <meta name="keywords" content="landing-page, front-end, html, css, javascript, web, developer, automation">
+    <!-- 
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon"> 
+    -->
+    <title> FireCode </title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <!-- 
     <link rel="stylesheet" href="css/animation.css">
-    <link rel="stylesheet" href="css/keyframes.css">
+    <link rel="stylesheet" href="css/keyframes.css"> 
+    -->
 </head>
-<body onload="start()">
+<body>
     <header>
-        <img id="drag1" src="icons/drag1.png" alt="logo-dragao" onclick="spitFire(`drag1`)">
-        <nav>
-            <a class="header" href="#inicio">INÍCIO</a>
-            <a class="header" href="#sobre">SOBRE MIM</a>
-            <a class="header" href="#projetos">PROJETOS</a>
-            <a class="header" href="#habilidades">HABILIDADES</a>
-        </nav>
-        <img id="drag2" src="icons/drag2.png" alt="logo-dragao" onclick="spitFire(`drag2`)">
+      <div class="row header-footer">
+        <div class="row center" style="column-gap: 10px;">
+          <div style="height: 52px !important;">
+            <img class="h-100 header-footer-img" src="img/logo-direita-cinza.png" alt="Logo FIRECODE">
+          </div>
+          <div>
+            <p class="brand-font header-footer-text fs-50" style="transform: translateY(5px);">FIRECODE</p>
+          </div>
+        </div>
+        <div class="row center" style="column-gap: 50px;">
+          <div>
+            <a href="#sobreNos" class="cta-font header-footer-text" style="transform: translateY(5px);">QUEM SOMOS</a>
+          </div>
+          <div>
+            <a href="#contato" class="cta-font header-footer-text" style="transform: translateY(5px);">CONTATO</a>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
         <section id="inicio">
-            <div id ="animacaoInicio" class="arte-animada">
-                <img id="arteInicio" src="img/inicio/arte-kadu-700.png" alt="arte-kadu-600">
-                <img id="container" src="img/inicio/container.jpeg" alt="card-que-esconde">
-                <img id="gifInicio" src="gifs/fireR.gif" alt="animacao-cuspe-de-fogo">
-            </div>
-            <div class="saudacao">
-                <p class="texto-inicio">Ola, eu sou o</p>
-                <p class="nome-inicio">Kadu </p>
-                <p class="texto-inicio">desenvolvedor fullstack</p>
-                <div>
-                    <a href="https://github.com/kKadoca" target="_blank" rel="external">
-                        <button class="botao b1">
-                            <img src="icons/github-icon-cinza.png" alt="github-icon" height="25px">
-                            GitHub
-                        </button></a>
-                    <a href="https://www.linkedin.com/in/carlos-eduardo-terra-62215822b/" target="_blank" rel="external">
-                        <button class="botao b1">
-                            <img src="icons/linkedin-icon-cinza.png" alt="linkedin-icon" height="25px">
-                            Linkedin
-                        </button></a>
+          <div class="content column main-section">
+              <div class="column" style="row-gap: 20px;">
+                <div class="h-280">
+                  <img class="h-100" src="img/firecode-logo-full.png" alt="FIRECODE Logo">
                 </div>
-            </div>
+                <p class="brand-font main-brand-text">FIRECODE</p>
+              </div>
+              <div>
+                <p class="text-font main-subtitle">Soluções Tecnológicas Personalizadas</p>
+              </div> 
+              <a href="#servicos">
+                <button class="cta cta-font">CONHECER SERVICOS</button>
+              </a>
+          </div>
         </section>
-        <section id="sobre">
-            <h2 id="aboutTitle">SOBRE MIM</h2>
-            <div class="section-sobre">
-                <div class="coluna-sobre">
-                    <div id="aboutTextBox">
-                        <p id="aboutText">Meu nome é Carlos Eduardo, sou graduando em Sistemas de Informação e, com a decisão de estudar por conta própria, tenho desenvolvido projetos web há quase dois anos e mantendo o estudo constante. Com isso, pude constatar a vastidão de conteúdo que eu me encontro em frente e desenvolver um engajamento crescente em relação ao meu crescimento intelectual. No momento, busco uma oportunidade de empenhar em uma função mais formal, com estabilidade e um plano de carreira, tendo como diretriz, <em>agregar</em> sempre mais valor.</p>    
-                    </div> 
-                    <a href="download/Carlos-Eduardo-Terra-Curriculum.pdf" target="_blank">
-                        <button class="botao b1">
-                        <img src="icons/download-icon.png" alt="icone de download" height="25px">
-                        Curriculum</button></a>
+        <section id="automacao">
+          <div class="content">
+            <div class="row" style="position: relative;">
+              <div class="main-column w-50">
+                <!-- Title -->
+                <div class="column">
+                  <p class="title-font">Tome um café</p>
+                  <p class="title-font">enquanto seu computador</p>
+                  <p class="title-font">
+                    <b class="highlight">trabalha por você.</b>
+                  </p>
                 </div>
-                <img id="aboutImage" src="img/avatars/avatar-corpo-default.png" alt="avatar-corpo-500" height="110%">
+                <!-- Text -->
+                <p class="text-font"><b>Automatize</b> as tarefas rotineiras de escritório, como gerar os relatórios de sempre, analisar planilhas, organizar arquivos, encaminhar e-mails e muito mais. Tudo isso com <b>segurança e agilidade.</b></p>
+                <!-- CTA -->
+                <a href="#contato">
+                  <button class="cta cta-font">AUTOMATIZAR AGORA</button>
+                </a>
+              </div>
+              <div class="w-50 h-450" style="position: absolute; right: 50px; bottom: -5px;">
+                <img class="h-100" src="img/xicara-fofinha-full.png" alt="Xícara de café fofinha sorrindo">
+              </div>
             </div>
+          </div>
         </section>
-        <section id="projetos">
-            <h2 id="projectsTitle" class="js-play">PROJETOS</h2>
-            <div id="sectionProjects" class="js-play">
-                <!-- projeto 01 -->
-                <div class="card-project">
-                    <img src="img/banners/lista-banner.jpg" alt="banner">
-                    <h3>Gerenciador de Listas</h3>
-                    <p>Um pequeno gerenciador de listas de numeros inteiros. Com ele é possível adicionar elementos, gerar uma análise ou limpar a lista.</p>
-                    <a href="projects/gerenciador-de-listas/main.html" target="_blank"><button class="botao b2"><img src="icons/link-icon.png" alt="icone de link externo" height="20px">Acessar</button></a>
+        <section id="sistema">
+          <div class="content">
+            <div class="row">
+              <div class="w-50 h-450">
+                <img class="h-100" src="img/lampada-engrenagens-400.png" alt="Ícones que simbolizam inovação e engenharia">
+              </div>
+              <div class="main-column w-50">
+                <!-- Title -->
+                <div class="column">
+                  <p class="title-font">
+                    <b class="highlight">Crie a sua praticidade</b>
+                  </p>
+                  <p class="title-font">com um sistema</p>
+                  <p class="title-font">feito sob medida.</p>
                 </div>
-                <!-- projeto 02 -->
-                <div class="card-project">
-                    <img src="img/banners/hora-banner.jpg" alt="banner">
-                    <h3>Hora do Dia</h3>
-                    <p>Um ambiente de escritório que se apresenta de formas diferentes de acordo com as horas do dia as quais o usuário o-acessa.</p>
-                    <a href="projects/hora-do-dia/main.html" target="_blank"><button class="botao b2"><img src="icons/link-icon.png" alt="icone de link externo" height="20px">Acessar</button></a>
-                </div>
-                <!-- projeto 03 -->
-                <div class="card-project">
-                    <img src="img/banners/loja-banner.jpg" alt="banner">
-                    <h3>Loja Virtual</h3>
-                    <p>Um projeto, ainda no papel, que será desenvolvido com a utilização de frameworks, além de ser alimentada por um banco de dados.</p>
-                    <button class="botao b2">Em Breve</button>
-                </div>
-                <!-- projeto 04 -->
-                <div class="card-project">
-                    <img src="img/banners/embreve.jpg" alt="banner">
-                    <h3>EM BREVE</h3>
-                    <p>...</p>
-                    <a href="#habilidades"><button class="botao b2">Em Breve</button></a>
-                </div>
+                <!-- Text -->
+                <p class="text-font">Chega de se perder nos arquivos e documentos, e de usar o bloco de notas pra se organizar. Organize suas informações mais importantes <b>como quiser.</b></p>
+                <!-- CTA -->
+                <a href="#contato">
+                  <button class="cta cta-font">TENHO INTERESSE</button>
+                </a>
+              </div>
             </div>
+          </div>
         </section>
-        <section id="habilidades">
-            <h2 id="skillsTitle" class="js-play">HABILIDADES</h2>
-            <div id="languageCard" class="subgrupo js-play">
-                <h3>Linguagens</h3>
-                <div id="languageGrid" class="grid js-play">
-                    <!-- linguagem 01 -->
-                    <div id="1" class="card-habilidade" onclick="expandCard(1)">
-											<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="icone-js" height="70px">
-											<div id="d1" class="habilidade-descricao">
-													<h4>JavaScript</h4>
-													<h5>Experiência: 1 ano</h5>
-											</div>
-										</div>
-										<!-- linguagem 02 -->
-                    <div id="2" class="card-habilidade" onclick="expandCard(2)">
-											<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="icone-python" height="70px">
-											<div id="d2" class="habilidade-descricao">
-													<h4>Python</h4>
-													<h5>Experiência: 2 anos</h5>
-											</div>
-										</div>
-                    <!-- linguagem 03 -->
-                    <div id="3" class="card-habilidade" onclick="expandCard(3)">
-											<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="icone-html" height="70px">
-											<div id="d3" class="habilidade-descricao">
-													<h4>HTML5</h4>
-													<h5>Experiência: 2 anos</h5>
-											</div>
-										</div>
-                    <!-- linguagem 04 -->
-                    <div id="4" class="card-habilidade" onclick="expandCard(4)">
-											<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="icone-css" height="70px">
-											<div id="d4" class="habilidade-descricao">
-													<h4>CSS3</h4>
-													<h5>Experiência: 2 anos</h5>
-											</div>
-										</div>
-										<!-- linguagem 05 -->
-                    <div id="5" class="card-habilidade" onclick="expandCard(5)">
-											<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="icone-css" height="70px">
-											<div id="d5" class="habilidade-descricao">
-													<h4>C</h4>
-													<h5>Experiência: 2 anos</h5>
-											</div>
-										</div>
+        <section id="servicos">
+          <div class="row section-header">
+            <h2 class="subtitle-font">NOSSOS SERVICOS</h2>
+          </div>
+          <div class="content">
+            <div class="row cards-row">
+              <div class="card column">
+                <div class="card-img">
+                  <img class="h-100" src="img/robo-300.png" alt="Robô representando Automação">
                 </div>
+                <h3 class="card-title">AUTOMATIZE A SUA ROTINA</h3>
+                <p class="card-text">Desfrute de mais tempo livre enquanto nossas automações cuidam das tarefas repetitivas do seu escritório. Desde a geração de relatórios até a organização de arquivos e envio de e-mails, tudo isso sempre com segurança e eficiência.</p>
+                <button class="card-button">
+                  <a href="#contato">
+                    <p class="card-button-text">AUTOMATIZAR!</p>
+                  </a>
+                </button>
+              </div>
+              <div class="card column">
+                <div class="card-img">
+                  <img class="h-100" src="img/sistema-300.png" alt="Lupa e engrenagens com um gráfico dentro">
+                </div>
+                <h3 class="card-title">SOLUCOES PERSONALIZADAS</h3>
+                <p class="card-text">Diga adeus à confusão com um sistema feito sob medida. Centralize as informações mais importantes e simplifique sua rotina com uma solução desenvolvida para suas necessidades e de seus clientes.</p>
+                <button class="card-button">
+                  <a href="#contato">
+                    <p class="card-button-text">PERSONALIZAR!</p>
+                  </a>
+                </button>
+              </div>
             </div>
-            <div id="toolCard" class="subgrupo js-play">
-                <h3>Ferramentas</h3>
-                <div id="toolGrid" class="grid js-play">
-									<!-- ferramenta 01 -->
-									<div id="6" class="card-habilidade" onclick="expandCard(6)">
-										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="icone-nodejs" height="70px">
-										<div id="d6" class="habilidade-descricao">
-												<h4>NodeJs</h4>
-												<h5>Experiência: 6 meses</h5>
-										</div>
-									</div>
-									<!-- ferramenta 02 -->
-									<div id="7" class="card-habilidade" onclick="expandCard(7)">
-										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="icone-npm" height="70px">
-										<div id="d7" class="habilidade-descricao">
-												<h4>NPM</h4>
-												<h5>Experiência: 6 meses</h5>
-										</div>
-									</div>
-									<!-- ferramenta 03 -->
-									<div id="8" class="card-habilidade" onclick="expandCard(8)">
-										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="icone-mongodb" height="70px">
-										<div id="d8" class="habilidade-descricao">
-												<h4>MongoDB</h4>
-												<h5>Experiência: 6 meses</h5>
-										</div>
-									</div>
-									<!-- ferramenta 04 -->
-									<div id="9" class="card-habilidade" onclick="expandCard(9)">
-											<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="icone-postgre" height="70px">
-											<div id="d9" class="habilidade-descricao">
-													<h4>PostgreSQL</h4>
-													<h5>Experiência: 1 ano</h5>
-											</div>
-									</div>
-									<!-- ferramenta 05 -->
-									<div id="10" class="card-habilidade" onclick="expandCard(10)">
-											<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="icone-mysql" height="70px">
-											<div id="d10" class="habilidade-descricao">
-													<h4>MySQL</h4>
-													<h5>Experiência: 1 ano</h5>
-											</div>
-									</div>
-									<!-- ferramenta 06 -->
-									<div id="11" class="card-habilidade" onclick="expandCard(11)">
-											<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="icone-git" height="70px">
-											<div id="d11" class="habilidade-descricao">
-													<h4>Git</h4>
-													<h5>Experiência: 1 ano</h5>
-											</div>
-									</div>
-									<!-- ferramenta 07 -->
-									<div id="12" class="card-habilidade" onclick="expandCard(12)">
-											<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="icone-vscode" height="70px">
-											<div id="d12" class="habilidade-descricao">
-													<h4>VsCode</h4>
-													<h5>Experiência: 2 anos</h5>
-											</div>
-									</div>
-							</div>
+          </div>
+        </section>
+        <section id="sobreNos">
+          <div class="row section-header">
+            <div>
+              <img src="img/logo-esquerda-laranja.png" alt="Logo FIRECODE">
             </div>
+            <h2 class="subtitle-font">O QUE FAZEMOS?</h2>
+            <div>
+              <img src="img/logo-direita-laranja.png" alt="Logo FIRECODE">
+            </div>
+          </div>
+          <div class="content-small main-column">
+            <p class="text-font about">Aqui na <b class="brand-font">FIRECODE</b>, nos especializamos em criar soluções <b class="highlight">personalizadas</b> para pequenas empresas e profissionais autônomos. Nosso objetivo é atender às necessidades específicas de cada cliente, visando tornar os processos mais <b class="highlight">ágeis</b> e as informações mais <b class="highlight">organizadas</b>.</p>
+            <p class="text-font about">Utilizamos uma variedade de tecnologias, sempre escolhendo a melhor solução para cada caso. Para isso, nos aproximamos de nossos clientes a fim de entender suas dores e utilizamos métodos de engenharia para elaborar uma <b class="highlight">solução perfeita</b>.</p>
+            <p class="text-font about">Estamos comprometidos em oferecer soluções eficientes e sob medida para ajudar nossos clientes a alcançar seus objetivos com mais <b class="highlight">praticidade e eficiência</b>.</p>
+          </div>
+        </section>
+        <section id="contato">
+          <div class="content">
+            <div class="row">
+              <div class="w-50">
+                <img class="img-kadu" src="img/arte-kadu-700-filtered.png" alt="Kadu - CEO e representante da FIRECODE">
+              </div>
+              <div class="main-column w-45">
+                <div class="column">
+                  <p class="title-font">Estamos apenas a uma </p>
+                  <p class="title-font">mensagem de distância.</p>
+                  <p class="title-font">Mande uma mensagem</p>
+                  <p class="title-font">no Whatsapp, </p>
+                  <p class="title-font">
+                    <b class="highlight">sem compromisso.</b>
+                  </p>
+                </div>
+                <div class="column" style="row-gap: 35px;">
+                  <p class="text-font">A comunicação é fundamental para que possamos elaborar <b>soluções tecnológicas eficientes.</b>
+                  </p>
+                  <p class="text-font">Só o entendimento do seu negócio e dos seus processos torna possível <b>otimizar e automatizar.
+                  </b></p>
+                </div>
+                <div class="cta-whatsapp-box">
+                  <button class="row cta-whatsapp cta-font">
+                    <div style="height: 60px !important;">
+                      <img class="h-100" src="img/whatsapp-logo.png" alt="Logo do Whatsapp" style="transform: translateY(-2px);">
+                    </div>
+                    <p class="">ENVIAR MENSAGEM</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
     </main>
     <footer>
-        <img id="drag3" src="gifs/spitfire-drag3.gif" alt="logo-dragao">
-        <p>Desenvolvido por Kadu Terra </p>
-        <div class="medias">
-            <a id="media1" href="https://instagram.com/kKadoca" target="_blank" rel="external">
-                <img src="icons/insta-icon-branco.png" alt="insta-icon">
-            </a>
-            <a id="media2" href="https://github.com/kKadoca" target="_blank" rel="external">
-                <img src="icons/github-icon-branco.png" alt="github-icon">
-            </a>
-            <a id="media3" href="https://www.linkedin.com/in/carlos-eduardo-terra-62215822b/" target="_blank" rel="external">
-                <img src="icons/linkedin-icon-branco.png" alt="linkedin-icon">
-            </a>
+      <div class="row header-footer">
+        <div class="row center" style="column-gap: 10px;">
+          <div style="height: 52px !important;">
+            <img class="h-100 header-footer-img" src="img/logo-direita-cinza.png" alt="Logo FIRECODE">
+          </div>
+          <div>
+            <p class="brand-font header-footer-text fs-50" style="transform: translateY(5px);">FIRECODE</p>
+          </div>
         </div>
+        <div class="row center" style="column-gap: 10px;">
+            <a href="https://www.instagram.com/firecode.oficial/" target="_blank" class="cta-font header-footer-text" style="transform: translateY(5px);">@firecode.oficial</a>
+        </div>
+      </div>
     </footer>
+    <!-- 
     <script src="js/animation.js"></script>
-    <script src="js/features.js"></script>
+    <script src="js/features.js"></script> 
+    -->
 </body>
 </html>
