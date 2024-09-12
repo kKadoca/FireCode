@@ -12,18 +12,14 @@ html {
 }
 
 section {
-  height: 750px;
-  max-height: fit-content;
+  height: fit-content;
+  width: 100%;
   align-content: center;
-  padding: 50px 0px;
+  padding: 125px 0px;
 }
 
 a {
   text-decoration: none;
-}
-
-a.header-footer-text:hover {
-  text-decoration: underline;
 }
 
 button:hover, a:hover {
@@ -47,19 +43,54 @@ button, button:hover, button:active, button:focus, a:active, a:focus {
   height: 100% !important;
 }
 
-.h-280 {
-  height: 280px !important;
-}
-
 .h-400 {
   height: 400px !important;
 }
 
-.h-450 {
+/* header e footer*/
+a.header-footer-text:hover {
+  text-decoration: underline;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 30px;
+  row-gap: 35px;
+}
+
+.header-footer {
+  padding: 16px 100px;
+  justify-content: space-between;
+}
+
+.header-footer-img {
+  filter: drop-shadow(0px 3px 6px #00000025);
+}
+
+/* seção inicio */
+.container-img-inicio {
+  height: 280px;
+  margin: auto;
+}
+
+.container-inicio-subtitle {
+  border-left: 3px solid var(--color1);
+  padding: 0px 30px;
+}
+
+.container-img-xicara {
   height: 450px !important;
+  position: absolute;
+  right: 50px;
+  bottom: -5px;
 }
 
 .content {
+  width: 100%;
   max-width: 1052px;
   margin: auto;
 }
@@ -72,11 +103,6 @@ button, button:hover, button:active, button:focus, a:active, a:focus {
 .content-small {
   max-width: 950px;
   margin: auto;
-}
-
-.header-footer {
-  padding: 16px 100px;
-  justify-content: space-between;
 }
 
 .row {
@@ -95,7 +121,7 @@ button, button:hover, button:active, button:focus, a:active, a:focus {
   row-gap: 60px;
 }
 
-.main-brand-text {
+.inicio-brand-text {
   font-size: 120px !important;
   letter-spacing: 0.20em !important;
 }
@@ -203,4 +229,42 @@ button, button:hover, button:active, button:focus, a:active, a:focus {
 
   font-size: 32px !important;
   letter-spacing: 0.20em;
+}
+
+@media (max-width: 1280px) {
+  .container-img-xicara {
+    height: 450px !important;
+    right: 150px;
+  }
+}
+
+@media (max-width: 1080px) {
+  /* seção inicio */
+  .container-img-inicio {
+    height: 150px;
+  }
+
+  .inicio-brand-text {
+    font-size: 72px !important;
+    text-indent: 15px;
+  }
+
+  .container-inicio-subtitle {
+    width: 250px;
+  }
+
+  .main-subtitle {
+    font-size: 26px !important;
+  }
+}
+
+@media (max-width: 720px) {
+  /* header e footer */
+  .container-header {
+    justify-content: center;
+  }
+
+  a.header-footer-text {
+    text-decoration: underline;
+  }
 }
