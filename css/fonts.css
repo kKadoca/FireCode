@@ -31,101 +31,19 @@
 .title-font {
   font-family: Candara_Bold, var(--default);
   font-weight: bold;
-  font-size: 30px;
-
-  letter-spacing: 0.25em;
-
-  text-shadow: 0px 2px 4px #00000015;
 }
 
 .subtitle-font {
   font-family: Brain, var(--default);
   font-weight: normal;
-  font-size: 32px;
-
-  letter-spacing: 0.15em;
-  align-self: center;
-
-  border-bottom: 3px solid var(--color1);
-  text-shadow: 0px 2px 4px #00000025;
-}
-
-.cta-font {
-  font-family: Brain, var(--default);
-  font-weight: normal;
-  font-size: 22px;
-
-  letter-spacing: 0.15em;
-  
-  text-shadow: 0px 2px 4px #00000045;
 }
 
 .text-font {
   font-family: Candara, var(--default);
   font-weight: normal;
-  font-size: 22px;
-
-  letter-spacing: 0.10em;
-
-  text-shadow: 0px 2px 4px #00000015;
-}
-
-.about {
-  letter-spacing: 0.30em !important;
 }
 
 .brand-font {
   font-family: Patrick, var(--default);
   font-weight: normal;
-  font-size: 36px;
-
-  color: var(--color1);
-}
-
-.header-footer-img {
-  filter: drop-shadow(0px 3px 6px #00000025);
-}
-
-.fs-50 {
-  font-size: 50px !important;
-}
-
-.header-footer-text {
-  color: var(--color2);
-  letter-spacing: 0.10em;
-  text-shadow: 0px 3px 6px #00000025;
-}
-
-/*  CARDS STYLE  */
-.card-title {
-  font-family: Brain, var(--default);
-  font-weight: normal;
-  font-size: 24px;
-
-  text-align: center;
-  width: 180px;
-  letter-spacing: 0.10em;
-
-  text-shadow: 0px 2px 4px #00000025;
-}
-
-.card-text {
-  font-family: Candara, var(--default);
-  font-weight: normal;
-  font-size: 18px;
-
-  letter-spacing: 0.05em;
-
-  text-shadow: 0px 2px 4px #00000025;
-}
-
-.card-button-text {
-  font-family: Candara_Bold, var(--default);
-  font-weight: bold;
-  font-size: 18px;
-
-  letter-spacing: 0.10em;
-
-  color: var(--color2);
-  text-shadow: 0px 2px 4px #00000035;
 }

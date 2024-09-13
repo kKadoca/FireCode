@@ -12,18 +12,14 @@ html {
 }
 
 section {
-  height: 750px;
-  max-height: fit-content;
+  height: fit-content;
+  width: 100%;
   align-content: center;
-  padding: 50px 0px;
+  padding: 125px 0px;
 }
 
 a {
   text-decoration: none;
-}
-
-a.header-footer-text:hover {
-  text-decoration: underline;
 }
 
 button:hover, a:hover {
@@ -36,30 +32,19 @@ button, button:hover, button:active, button:focus, a:active, a:focus {
 }
 
 .w-45 {
-  width: 45% !important;
+  width: 45%;
 }
 
 .w-50 {
-  width: 50% !important;
+  width: 50%;
 }
 
 .h-100 {
-  height: 100% !important;
-}
-
-.h-280 {
-  height: 280px !important;
-}
-
-.h-400 {
-  height: 400px !important;
-}
-
-.h-450 {
-  height: 450px !important;
+  height: 100%;
 }
 
 .content {
+  width: 100%;
   max-width: 1052px;
   margin: auto;
 }
@@ -67,16 +52,6 @@ button, button:hover, button:active, button:focus, a:active, a:focus {
 .center {
   justify-content: center;
   align-items: center;
-}
-
-.content-small {
-  max-width: 950px;
-  margin: auto;
-}
-
-.header-footer {
-  padding: 16px 100px;
-  justify-content: space-between;
 }
 
 .row {
@@ -90,26 +65,44 @@ button, button:hover, button:active, button:focus, a:active, a:focus {
   flex-direction: column;
 }
 
-.main-section {
-  align-items: center;
-  row-gap: 60px;
+.cta {
+  background-color: var(--color1);
+  color: var(--color2);
+  
+  max-width: fit-content;
+  padding: 18px 24px;
+  border-radius: 5px;
+
+  box-shadow: 0px 2px 4px #00000045;
 }
 
-.main-brand-text {
-  font-size: 120px !important;
-  letter-spacing: 0.20em !important;
+/* text */
+.title-text {
+  font-size: 30px;
+  letter-spacing: 0.25em;
+  text-shadow: 0px 2px 4px #00000015;
 }
 
-.main-subtitle {
-  font-size: 32px !important;
-  letter-spacing: 0.20em !important;
+.subtitle-text {
+  font-size: 32px;
+  letter-spacing: 0.15em;
+  text-shadow: 0px 2px 4px #00000025;
+  
+  align-self: center;
+  border-bottom: 3px solid var(--color1);
 }
 
-.main-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  row-gap: 60px;
+.normal-text {
+  font-size: 22px;
+  letter-spacing: 0.10em;
+  text-shadow: 0px 2px 4px #00000015;
+}
+
+.cta-text {
+  color: var(--color2);
+  font-size: 22px;
+  letter-spacing: 0.15em;
+  text-shadow: 0px 2px 4px #00000045;
 }
 
 .highlight {
@@ -119,26 +112,103 @@ button, button:hover, button:active, button:focus, a:active, a:focus {
   text-shadow: 0px 2px 4px #00000025;
 }
 
-.cta {
-  background-color: var(--color1);
+/* header e footer*/
+.header-footer-text {
   color: var(--color2);
-  
-  padding: 18px 24px;
-  border-radius: 5px;
-  max-width: fit-content;
 
-  box-shadow: 0px 2px 4px #00000045;
+  font-size: 50px;
+  letter-spacing: 0.10em;
+  text-shadow: 0px 3px 6px #00000025;
 }
 
-.section-header {
-  margin: 0px auto 100px;
-  width: fit-content;
-  column-gap: 45px;
+a.header-footer-text:hover {
+  text-decoration: underline;
 }
 
+.container-header-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 30px;
+  row-gap: 35px;
+}
+
+.header-footer-img {
+  filter: drop-shadow(0px 3px 6px #00000025);
+}
+
+/* seção inicio */
+.section-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 60px;
+}
+
+.container-img-inicio {
+  height: 280px;
+  margin: auto;
+}
+
+.inicio-brand-text {
+  color: var(--color1);
+  font-size: 120px;
+  letter-spacing: 0.20em;
+}
+
+.container-inicio-subtitle {
+  border-left: 3px solid var(--color1);
+  padding: 0px 30px;
+}
+
+.inicio-subtitle-text {
+  font-size: 32px;
+  letter-spacing: 0.20em;
+}
+
+/* seção automação */
+.container-content-automacao {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.container-img-xicara {
+  height: 450px;
+  position: absolute;
+  right: 55px;
+  bottom: -5px;
+}
+
+.main-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: 60px;
+}
+
+/* seção sistema */
+.container-content-sistema {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.container-img-lampada {
+  height: 400px;
+}
+
+/* seção serviços */
 .cards-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   column-gap: 100px;
+  row-gap: 100px;
 }
 
 .card {
@@ -161,6 +231,21 @@ button, button:hover, button:active, button:focus, a:active, a:focus {
   filter: drop-shadow(0px 2px 4px #00000035);
 }
 
+.card-title-text {
+  font-size: 24px;
+  letter-spacing: 0.10em;
+  text-shadow: 0px 2px 4px #00000025;
+
+  text-align: center;
+  width: 180px;
+}
+
+.card-description-text {
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-shadow: 0px 2px 4px #00000025;
+}
+
 .card-button {
   background-color: var(--color1);
   width: 100%;
@@ -170,16 +255,64 @@ button, button:hover, button:active, button:focus, a:active, a:focus {
   box-shadow: 0px 2px 4px #00000035;
 }
 
+.card-button-text {
+  color: var(--color2);
+  font-size: 18px;
+  letter-spacing: 0.10em;
+  text-shadow: 0px 2px 4px #00000035;
+}
+
 .card-button a:hover {
   text-decoration: none;
 }
 
+/* seção sobre */
+.section-header {
+  margin: 0px auto 100px;
+  width: fit-content;
+  column-gap: 45px;
+}
+
+.container-img-logo-sobre {
+  height: 50px;
+}
+
+.content-small {
+  max-width: 950px;
+  margin: auto;
+}
+
+.about-brand-text {
+  color: var(--color1);
+  font-size: 120px;
+  letter-spacing: 0.20em;
+}
+
+.about-text {
+  font-size: 22px;
+  letter-spacing: 0.30em;
+  text-shadow: 0px 2px 4px #00000015;
+}
+
+/* seção contato */
 #contato {
-  padding: 50px 0px 0px !important;
+  padding: 125px 0px 0px !important;
+}
+
+.container-content-contato {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 60px;
+}
+
+.container-img-kadu {
+  height: 704px;
   align-content: flex-end;
 }
 
 .img-kadu {
+  width: 100%;
   transform: translateY(4px);
   filter: drop-shadow(0px 10px 25px #00000035);
 }
@@ -191,7 +324,11 @@ button, button:hover, button:active, button:focus, a:active, a:focus {
   box-shadow: 0px 3px 6px #00000035;
 }
 
-.cta-whatsapp {
+.container-img-whatsapp {
+  height: 60px;
+}
+
+.cta-whatsapp-text {
   background-color: var(--color2);
   color: var(--color1);
 
@@ -201,6 +338,152 @@ button, button:hover, button:active, button:focus, a:active, a:focus {
   column-gap: 20px;
   align-items: center;
 
-  font-size: 32px !important;
+  font-size: 32px;
   letter-spacing: 0.20em;
+}
+
+@media (max-width: 1080px) {
+  .container-img-xicara {
+    height: 350px;
+    right: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* geral */
+  .content {
+    max-width: 400px;
+  }
+
+  .w-50, .w-45 {
+    width: auto;
+  }
+
+  /* text */
+  .title-text {
+    font-size: 24px;
+  }
+
+  .subtitle-text {
+    font-size: 24px;
+  }
+
+  .normal-text {
+    font-size: 18px;
+  }
+
+  .about-text {
+    font-size: 18px;
+  }  
+
+  .cta-text {
+    font-size: 18px;
+  }
+
+  /* header e footer */
+  .container-header-footer {
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  a.cta-text {
+    text-decoration: underline;
+  }
+
+  footer .container-header-footer > div:first-child {
+    display: none;
+  }
+
+  /* seção inicio */
+  .container-img-inicio {
+    height: 150px;
+  }
+
+  .inicio-brand-text {
+    font-size: 72px;
+    text-indent: 15px;
+  }
+
+  .container-inicio-subtitle {
+    width: 200px;
+  }
+
+  .inicio-subtitle-text {
+    font-size: 24px;
+  }
+
+  /* seção automacao */
+  .container-content-automacao {
+    flex-wrap: wrap;
+    row-gap: 30px;
+    overflow: hidden; 
+  }
+
+  .container-img-xicara {
+    position: relative;
+    height: 350px;
+    right: 50px;
+  }
+
+  .main-column {
+    padding: 0px 30px;
+    align-items: center;
+  }
+
+  /* seção sistema */
+  .container-content-sistema {
+    flex-direction: column-reverse;
+    row-gap: 60px;
+  }
+
+  .container-img-lampada {
+    height: 300px;
+    margin: auto;
+  }
+
+  /* seção serviços */
+  .card {
+    height: 420px;
+    width: 250px;
+  }
+
+  .card-title-text {
+    font-size: 22px;
+    width: 165px;
+  }
+  
+  .card-description-text {
+    font-size: 16px;
+  }
+
+  .card-button-text {
+    font-size: 16px;
+  }
+
+  /* seção sobre */
+  .section-header {
+    column-gap: 10px;
+  }
+
+  .container-img-logo-sobre {
+    height: 35px;
+  }
+
+  /* seção contato */
+  .container-content-contato {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .container-img-kadu {
+    margin-top: 60px;
+  }
+
+  .container-img-whatsapp {
+    height: 45px;
+  }
+
+  .cta-whatsapp-text {
+    font-size: 22px;
+  }
 }
