@@ -481,8 +481,8 @@ a.header-footer-text:hover {
 
   @media not all and (min-resolution: 0.001dpcm) {
     @supports (-webkit-appearance:none) {
-      .container-img-kadu > img{
-        margin-bottom: -50px;
+      .img-kadu{
+        transform: translateY(50px);
       }
     }
   }
