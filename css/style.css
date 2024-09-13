@@ -482,7 +482,7 @@ a.header-footer-text:hover {
   @media not all and (min-resolution: 0.001dpcm) {
     @supports (-webkit-appearance:none) {
       .img-kadu{
-        transform: translateY(50px);
+        transform: translateY(54px);
       }
     }
   }
