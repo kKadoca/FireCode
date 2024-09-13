@@ -295,7 +295,7 @@ a.header-footer-text:hover {
 }
 
 /* seção contato */
-#contato {
+.section-contato {
   padding: 125px 0px 0px !important;
 }
 
