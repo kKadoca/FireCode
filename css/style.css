@@ -179,7 +179,7 @@ a.header-footer-text:hover {
 .container-img-xicara {
   height: 450px;
   position: absolute;
-  right: 50px;
+  right: 55px;
   bottom: -5px;
 }
 
@@ -303,10 +303,12 @@ a.header-footer-text:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  column-gap: 60px;
 }
 
 .container-img-kadu {
-  width: 50%;
+  height: 704px;
+  align-content: flex-end;
 }
 
 .img-kadu {
@@ -414,6 +416,7 @@ a.header-footer-text:hover {
   .container-content-automacao {
     flex-wrap: wrap;
     row-gap: 30px;
+    overflow: hidden; 
   }
 
   .container-img-xicara {
@@ -474,7 +477,6 @@ a.header-footer-text:hover {
 
   .container-img-kadu {
     margin-top: 60px;
-    width: 80%;
   }
 
   .container-img-whatsapp {
