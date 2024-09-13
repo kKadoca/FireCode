@@ -308,7 +308,7 @@ a.header-footer-text:hover {
 
 .container-img-kadu {
   height: 704px;
-  align-content: flex-end;
+  align-content: end;
 }
 
 .img-kadu {
@@ -476,7 +476,7 @@ a.header-footer-text:hover {
   }
 
   .container-img-kadu {
-    margin-top: 60px;
+    margin: 60px 0px 0px !important;
   }
 
   .container-img-whatsapp {
